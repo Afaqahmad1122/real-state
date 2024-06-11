@@ -25,7 +25,7 @@ const SignUp = () => {
       });
       const data = await res.json();
       if (data.success === false) {
-        setError(data.message); // Correct the typo here
+        setError(data.message);
         setLoading(false);
         return;
       }
